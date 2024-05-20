@@ -39,7 +39,7 @@
     "url": "https://github.com/Transak/transak-sdk"
   },
   "dependencies": {
-    "events": "^3.3.0",
+    "@billjs/event-emitter": "^1.0.3",
     "pako": "^2.1.0",
     "query-string": "^8.2.0"
   },

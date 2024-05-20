@@ -1,4 +1,4 @@
-import events from 'events';
+import events from '@billjs/event-emitter';
 import { Environments } from 'Constants/environments';
 import { Events } from 'Constants/events';
 import { renderIframeInCustomContainer } from 'Components/custom-container/render-iframe-in-custom-container';
@@ -94,7 +94,7 @@ class Transak {
   };
 
   #removeEventListener = () => {
-    eventEmitter.removeAllListeners();
+    eventEmitter.offAll();
     window.removeEventListener('message', this.#handleMessage);
   };
 }

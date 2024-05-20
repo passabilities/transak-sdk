@@ -11,5 +11,6 @@
   "minify": true,
   "outDir": "lib",
   "sourcemap": true,
-  "splitting": true
+  "splitting": true,
+  "noExternal": [ "@billjs/event-emitter", "pako", "query-string" ]
 }
